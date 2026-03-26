@@ -55,12 +55,12 @@ export default function Hero() {
                 </motion.span>
 
                 <motion.h1
-                    className="text-6xl md:text-7xl lg:text-9xl text-white mb-8 tracking-wider"
+                    className="text-6xl md:text-7xl lg:text-8xl text-white mb-8 tracking-wider"
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.7 }}
                 >
-                    Fordham Suites
+                    Raysolo Hotel & Suites
                 </motion.h1>
 
                 <motion.p

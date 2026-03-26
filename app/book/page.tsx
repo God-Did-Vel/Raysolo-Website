@@ -179,7 +179,7 @@ export default function BookPage() {
 
             <div className="container mx-auto px-6 lg:px-12 text-center mb-16">
                 <h1 className="text-4xl md:text-6xl font-serif text-white mb-4">Make a Reservation</h1>
-                <p className="text-gray-400 max-w-2xl mx-auto">Book your stay at Fordham Suites and prepare for an unforgettable luxury experience.</p>
+                <p className="text-gray-400 max-w-2xl mx-auto">Book your stay at Raysolo Hotel & Suites and prepare for an unforgettable luxury experience.</p>
             </div>
 
             <div className="container mx-auto px-6 lg:px-12 max-w-4xl relative">
@@ -193,7 +193,7 @@ export default function BookPage() {
                             <CheckCircle size={80} className="text-accent mb-6" />
                             <h2 className="text-3xl font-serif text-white mb-4">Congratulations! 🎉</h2>
                             <p className="text-gray-400 font-light text-sm mb-6 max-w-lg">
-                                Your room has been successfully reserved. Thanks for choosing Fordham Suites for your luxury getaway.
+                                Your room has been successfully reserved. Thanks for choosing Raysolo Hotel & Suites for your luxury getaway.
                             </p>
 
                             {paymentDetails && (
@@ -394,7 +394,7 @@ export default function BookPage() {
                             <div className="bg-[#1a1a1a] p-6 rounded-lg border border-white/10 mt-6 flex justify-between items-center">
                                 <span className="text-gray-400">Total Estimated Cost:</span>
                                 <span className="text-2xl font-serif text-accent flex items-center">
-                                    ${calculateTotal(roomId, checkIn, checkOut).toLocaleString()}
+                                    ₦{calculateTotal(roomId, checkIn, checkOut).toLocaleString()}
                                 </span>
                             </div>
                         )}

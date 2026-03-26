@@ -7,20 +7,20 @@ export default function ExtendedLuxuryText() {
                 </h3>
                 <div className="max-w-4xl mx-auto space-y-6 text-gray-400 font-light text-base md:text-lg leading-relaxed">
                     <p>
-                        At Fordham Suites, luxury transcends the ordinary. From the moment you step into our meticulously
+                        At Raysolo Hotel & Suites, luxury transcends the ordinary. From the moment you step into our meticulously
                         designed spaces, you are enveloped in an ambiance of refined sophistication and warm European hospitality.
                         Every architectural detail, piece of bespoke furniture, and carefully curated work of art has been thoughtfully
                         placed to inspire awe and provide an unparalleled sense of tranquility.
                     </p>
                     <p>
-                        We understand that true luxury lies in the details—the crispness of Italian linens, the delicate fragrance
+                        We understand that true luxury lies in the details the crispness of linens, the delicate fragrance
                         in the corridors, and the intuitive, personalized service that anticipates your needs before you even
                         realize them. Whether you are retreating to our sanctuary for a weekend getaway or gathering for an occasion
                         of a lifetime, we ensure your stay is painted with memories of absolute perfection.
                     </p>
                     <p>
                         Embrace a world where modern comforts meet classical splendor. Let the hustle of the outside world fade
-                        away as you sink into the unmatched opulence that is the hallmark of the Fordham Suites experience. Welcome home to luxury.
+                        away as you sink into the unmatched opulence that is the hallmark of the Raysolo Hotel & Suites experience. Welcome home to luxury.
                     </p>
                 </div>
             </div>

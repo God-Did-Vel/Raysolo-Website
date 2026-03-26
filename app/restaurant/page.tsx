@@ -9,53 +9,53 @@ const meals = [
     name: "Wagyu Beef Filet",
     description:
       "Served with truffle mash, roasted asparagus, and a port wine reduction.",
-    price: "$85",
+    price: "₦85",
     category: "Dinner",
   },
   {
     name: "Lobster Ravioli",
     description:
       "Handmade pasta stuffed with Maine lobster in a saffron cream sauce.",
-    price: "$45",
+    price: "₦45",
     category: "Dinner",
   },
   {
     name: "Tiramisu della Casa",
     description:
       "Classic Italian dessert made with espresso, mascarpone, and cocoa.",
-    price: "$18",
+    price: "₦18",
     category: "Dessert",
   },
   {
     name: "Mediterranean Sea Bass",
     description:
       "Pan-seared, served with lemon butter, capers, and seasonal greens.",
-    price: "$55",
+    price: "₦55",
     category: "Dinner",
   },
   {
     name: "Artisan Eggs Benedict",
     description: "Poached eggs, prosciutto, hollandaise on toasted ciabatta.",
-    price: "$28",
+    price: "₦28",
     category: "Breakfast",
   },
   {
     name: "Avocado & Crab Tartare",
     description: "Fresh crab meat, avocado puree, and citrus dressing.",
-    price: "$32",
+    price: "₦32",
     category: "Appetizer",
   },
   {
     name: "Tuscan Ribeye",
     description: "Dry-aged 16oz bone-in ribeye with rosemary potatoes.",
-    price: "$95",
+    price: "₦95",
     category: "Dinner",
   },
   {
     name: "Saffron Risotto",
     description:
       "Creamy Arborio rice infused with Spanish saffron and parmesan.",
-    price: "$38",
+    price: "₦38",
     category: "Dinner",
   },
 ];

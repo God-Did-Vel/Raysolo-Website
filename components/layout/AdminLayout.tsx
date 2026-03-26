@@ -112,7 +112,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
                     />
                     <aside className="fixed inset-y-0 left-0 z-50 w-64 bg-[#0a0a0a] border-r border-white/5 flex flex-col">
                         <div className="p-6 border-b border-white/5 flex justify-between items-center">
-                            <h1 className="text-2xl font-serif text-accent tracking-widest uppercase">Fordham Suites</h1>
+                            <h1 className="text-2xl font-serif text-accent tracking-widest uppercase">Raysolo Hotel & Suites</h1>
                             <button onClick={() => setSidebarOpen(false)}>
                                 <X size={24} />
                             </button>
@@ -153,7 +153,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
             <main className="flex-1 overflow-y-auto min-h-screen">
                 {/* Mobile Header */}
                 <div className="lg:hidden bg-[#0a0a0a] p-4 border-b border-white/5 flex justify-between items-center sticky top-0 z-40">
-                    <h1 className="text-xl font-serif text-accent tracking-widest uppercase">Fordham Suites Admin</h1>
+                    <h1 className="text-xl font-serif text-accent tracking-widest uppercase">Raysolo Hotel & Suites Admin</h1>
                     <button onClick={() => setSidebarOpen(!sidebarOpen)}>
                         {sidebarOpen ? <X size={24} /> : <Menu size={24} />}
                     </button>
