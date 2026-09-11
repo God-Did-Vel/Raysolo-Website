@@ -17,12 +17,10 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
                 const token = localStorage.getItem("adminToken");
                 
                 if (!token) {
-                    // No token, redirect to login
                     router.push("/admin/login");
                     return;
                 }
 
-                // Token exists, we're authenticated
                 setIsLoading(false);
             } catch (error) {
                 console.error("Auth check error:", error);
@@ -40,12 +38,11 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
         router.push("/admin/login");
     };
 
-    // Show loading while checking auth
     if (isLoading) {
         return (
             <div className="min-h-screen bg-black flex flex-col items-center justify-center">
                 <Loader2 className="w-10 h-10 text-accent animate-spin mb-4" />
-                <p className="text-gray-400 font-light tracking-widest uppercase text-sm">Loading Admin</p>
+                <p className="text-gray-400 font-light tracking-widest uppercase text-sm">Loading Sunluxe Admin</p>
             </div>
         );
     }
@@ -69,10 +66,10 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
             {/* Desktop Sidebar */}
             <aside className="hidden lg:flex lg:w-64 bg-[#0a0a0a] border-r border-white/5 flex-col">
                 <div className="p-6 border-b border-white/5">
-                    <h1 className="text-2xl font-serif text-accent tracking-widest uppercase">
-                        Fordham Suites<span className="text-white">.</span>
+                    <h1 className="text-xl font-serif text-accent tracking-widest uppercase">
+                        Sunluxe Hotel &amp; Suites<span className="text-white">.</span>
                     </h1>
-                    <p className="text-xs uppercase tracking-widest text-gray-500 mt-2">Admin</p>
+                    <p className="text-[10px] uppercase tracking-[0.25em] text-gray-500 mt-2 font-semibold">Admin Executive Console</p>
                 </div>
 
                 <nav className="flex-1 py-6 px-3 space-y-1 overflow-y-auto">
@@ -80,9 +77,9 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
                         <Link
                             key={item.href}
                             href={item.href}
-                            className={`flex items-center space-x-3 px-4 py-3 rounded-md transition-colors ${
+                            className={`flex items-center space-x-3 px-4 py-3 rounded-[12px] transition-colors ${
                                 isActive(item.href)
-                                    ? "bg-accent/20 text-accent"
+                                    ? "bg-accent/20 text-accent font-medium"
                                     : "text-gray-300 hover:text-white hover:bg-white/5"
                             }`}
                         >
@@ -95,7 +92,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
                 <div className="p-4 border-t border-white/5">
                     <button
                         onClick={handleLogout}
-                        className="flex items-center w-full space-x-3 px-4 py-3 rounded-md hover:bg-red-500/10 text-gray-400 hover:text-red-500 transition-colors"
+                        className="flex items-center w-full space-x-3 px-4 py-3 rounded-[12px] hover:bg-red-500/10 text-gray-400 hover:text-red-500 transition-colors"
                     >
                         <LogOut size={20} />
                         <span className="text-sm font-light tracking-wider">Sign Out</span>
@@ -112,7 +109,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
                     />
                     <aside className="fixed inset-y-0 left-0 z-50 w-64 bg-[#0a0a0a] border-r border-white/5 flex flex-col">
                         <div className="p-6 border-b border-white/5 flex justify-between items-center">
-                            <h1 className="text-2xl font-serif text-accent tracking-widest uppercase">Raysolo Hotel & Suites</h1>
+                            <h1 className="text-lg font-serif text-accent tracking-widest uppercase">Sunluxe Hotel &amp; Suites</h1>
                             <button onClick={() => setSidebarOpen(false)}>
                                 <X size={24} />
                             </button>
@@ -124,7 +121,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
                                     key={item.href}
                                     href={item.href}
                                     onClick={() => setSidebarOpen(false)}
-                                    className={`flex items-center space-x-3 px-4 py-3 rounded-md transition-colors ${
+                                    className={`flex items-center space-x-3 px-4 py-3 rounded-[12px] transition-colors ${
                                         isActive(item.href)
                                             ? "bg-accent/20 text-accent"
                                             : "text-gray-300 hover:text-white hover:bg-white/5"
@@ -139,7 +136,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
                         <div className="p-4 border-t border-white/5">
                             <button
                                 onClick={handleLogout}
-                                className="flex items-center w-full space-x-3 px-4 py-3 rounded-md hover:bg-red-500/10 text-gray-400 hover:text-red-500 transition-colors"
+                                className="flex items-center w-full space-x-3 px-4 py-3 rounded-[12px] hover:bg-red-500/10 text-gray-400 hover:text-red-500 transition-colors"
                             >
                                 <LogOut size={20} />
                                 <span className="text-sm font-light tracking-wider">Sign Out</span>
@@ -153,7 +150,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
             <main className="flex-1 overflow-y-auto min-h-screen">
                 {/* Mobile Header */}
                 <div className="lg:hidden bg-[#0a0a0a] p-4 border-b border-white/5 flex justify-between items-center sticky top-0 z-40">
-                    <h1 className="text-xl font-serif text-accent tracking-widest uppercase">Raysolo Hotel & Suites Admin</h1>
+                    <h1 className="text-lg font-serif text-accent tracking-widest uppercase">Sunluxe Admin</h1>
                     <button onClick={() => setSidebarOpen(!sidebarOpen)}>
                         {sidebarOpen ? <X size={24} /> : <Menu size={24} />}
                     </button>

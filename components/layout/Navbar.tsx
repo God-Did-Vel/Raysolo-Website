@@ -2,22 +2,15 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
-import Image from "next/image";
+import { Menu, X, Sparkles } from "lucide-react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-
-  const LOGO_BORDER_RADIUS = "rounded-full"; 
-  const LOGO_SIZE_DEFAULT = "h-10 md:h-15 lg:h-17"; 
-  const LOGO_SIZE_SCROLLED = "h-10 md:h-12 lg:h-14"; 
-  
-
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
+      setScrolled(window.scrollY > 40);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -25,148 +18,133 @@ export default function Navbar() {
 
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/rooms", label: "Rooms & Suites" },
+    { href: "/about", label: "About" },
+    { href: "/rooms", label: "Suites" },
+    { href: "/restaurant", label: "Dining" },
+    { href: "/spa", label: "Wellness & Spa" },
+    { href: "/events", label: "Events" },
     { href: "/gallery", label: "Gallery" },
-    { href: "/login", label: "Sign In" },
   ];
 
   return (
     <nav
       className={`fixed w-full z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-black/95 backdrop-blur-md py-2 shadow-[0_4px_40px_rgba(0,0,0,0.6)]"
-          : "bg-gradient-to-b from-black/70 via-black/30 to-transparent py-4"
+          ? "bg-[#060608]/95 backdrop-blur-xl py-3 border-b border-accent/20 shadow-[0_10px_35px_rgba(0,0,0,0.8)]"
+          : "bg-gradient-to-b from-black/80 via-black/40 to-transparent py-5"
       }`}
     >
-      {/* Top gold line */}
-      <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-[#d4af37] to-transparent opacity-60" />
+      {/* Top micro gold line */}
+      <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-accent/60 to-transparent" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 flex justify-between items-center">
 
-        {/* ── Logo ── */}
-        <Link href="/" className="flex items-center gap-3 group flex-shrink-0">
-          <div className={`overflow-hidden flex-shrink-0 ${LOGO_BORDER_RADIUS} transition-all duration-500`}>
-            <Image
-              src="https://res.cloudinary.com/duweg8kpv/image/upload/v1774468057/r1-real_m99rxp.png"
-              alt="Raysolo Hotel & Suites"
-              width={200}
-              height={80}
-              className={`w-auto object-contain transition-all duration-500 ${
-                scrolled ? LOGO_SIZE_SCROLLED : LOGO_SIZE_DEFAULT
-              }`}
-              priority
-            />
+        {/* ── Brand / Logo ── */}
+        <Link href="/" className="flex items-center gap-3.5 group flex-shrink-0">
+          <div className="w-10 h-10 md:w-11 md:h-11 rounded-[15px] border border-accent/40 bg-black/60 flex items-center justify-center group-hover:border-accent group-hover:shadow-[0_0_15px_rgba(212,175,55,0.3)] transition-all duration-500">
+            <span className="font-cinzel text-accent font-bold text-lg md:text-xl tracking-wider">S</span>
           </div>
 
-          <div className="flex flex-col leading-tight gap-[3px]">
-          
-            <span
-              className={`font-serif font-semibold uppercase tracking-[0.4em] transition-all duration-500 text-white/90 group-hover:text-[#d4af37] ${
-                scrolled
-                  ? "text-[9px] md:text-[10px]"
-                  : "text-[10px] md:text-[11px] lg:text-[12px]"
-              }`}
-            >
-              Raysolo
+          <div className="flex flex-col leading-none">
+            <span className="font-serif text-lg md:text-xl font-medium tracking-[0.2em] uppercase text-white group-hover:text-accent transition-colors duration-300">
+              Sunluxe
             </span>
-
-            <span
-              className={`font-sans font-light tracking-[0.35em] uppercase text-[#d4af37] transition-all duration-500 ${
-                scrolled
-                  ? "text-[7px] md:text-[8px]"
-                  : "text-[8px] md:text-[9px] lg:text-[10px]"
-              }`}
-            >
+            <span className="font-sans text-[8px] md:text-[9px] font-semibold tracking-[0.4em] uppercase text-accent mt-1">
               Hotel &amp; Suites
             </span>
           </div>
         </Link>
 
         {/* ── Desktop Menu ── */}
-        <div className="hidden md:flex items-center space-x-2 lg:space-x-3">
+        <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="relative text-[8px] lg:text-[11px] font-bold uppercase tracking-[0.2em] text-white hover:text-[#d4af37] transition-colors duration-300 after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-0 after:bg-[#d4af37] after:transition-all after:duration-300 hover:after:w-full whitespace-nowrap"
+              className="relative text-[11px] font-semibold uppercase tracking-[0.2em] text-gray-300 hover:text-accent transition-colors duration-300 py-1 group/item"
             >
-              {link.label}
+              <span>{link.label}</span>
+              <span className="absolute bottom-0 left-0 w-0 h-[1.5px] bg-accent transition-all duration-300 group-hover/item:w-full" />
             </Link>
           ))}
+        </div>
 
-          {/* Divider */}
-          <div className="h-5 w-px bg-[#d4af37]/40" />
+        {/* ── Right Actions ── */}
+        <div className="hidden md:flex items-center space-x-4">
+          <Link
+            href="/login"
+            className="text-[11px] font-semibold uppercase tracking-[0.2em] text-gray-300 hover:text-white transition-colors px-2 py-1"
+          >
+            Sign In
+          </Link>
 
-          {/* Book Now CTA */}
           <Link
             href="/book"
-            className="relative overflow-hidden border border-[#d4af37] text-[#d4af37] font-bold px-6 lg:px-8 py-2.5 uppercase tracking-[0.2em] text-[10px] lg:text-[11px] transition-all duration-300 hover:text-black group whitespace-nowrap"
+            className="btn-gold-shimmer relative overflow-hidden bg-accent hover:bg-accent-light text-black font-semibold px-6 py-2.5 rounded-[15px] uppercase tracking-[0.2em] text-[11px] transition-all duration-300 shadow-[0_4px_20px_rgba(212,175,55,0.25)] hover:shadow-[0_4px_25px_rgba(212,175,55,0.45)] hover:scale-[1.02]"
           >
-            <span className="absolute inset-0 bg-[#d4af37] translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
-            <span className="relative z-10">Book Now</span>
+            <span className="relative z-10 flex items-center gap-1.5">
+              <Sparkles size={12} className="text-black/80" />
+              Book Now
+            </span>
           </Link>
         </div>
 
         {/* ── Mobile Menu Button ── */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-white hover:text-[#d4af37] transition-colors focus:outline-none p-1"
+          className="lg:hidden text-white hover:text-accent p-2 rounded-[10px] border border-white/10 focus:outline-none transition-colors"
           aria-label="Toggle menu"
         >
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
+          {isOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
       </div>
 
       {/* ── Mobile Menu Dropdown ── */}
       <div
-        className={`md:hidden absolute top-full left-0 w-full bg-black/98 backdrop-blur-md flex flex-col items-center py-10 space-y-6 transition-all duration-300 border-t border-[#d4af37]/20 ${
+        className={`lg:hidden absolute top-full left-0 w-full bg-[#060608]/98 backdrop-blur-2xl border-t border-accent/20 shadow-2xl flex flex-col items-center py-8 space-y-5 transition-all duration-300 ${
           isOpen
             ? "opacity-100 translate-y-0 pointer-events-auto"
             : "opacity-0 -translate-y-4 pointer-events-none"
         }`}
       >
-        {/* Mobile Logo + Brand */}
-        <div className="flex flex-col items-center gap-2">
-          <div className={`overflow-hidden ${LOGO_BORDER_RADIUS}`}>
-            <Image
-              src="https://res.cloudinary.com/duweg8kpv/image/upload/v1774468057/r1-real_m99rxp.png"
-              alt="Raysolo Hotel & Suites"
-              width={100}
-              height={40}
-              className="h-14 w-auto object-contain"
-            />
+        <div className="flex flex-col items-center mb-2">
+          <div className="w-12 h-12 rounded-[15px] border border-accent/40 bg-black/60 flex items-center justify-center mb-2">
+            <span className="font-cinzel text-accent font-bold text-2xl">S</span>
           </div>
-          <span className="font-serif font-semibold uppercase tracking-[0.4em] text-white/90 text-[10px]">
-            Raysolo
-          </span>
-          <span className="font-sans font-light tracking-[0.35em] uppercase text-[#d4af37] text-[9px]">
-            Hotel &amp; Suites
-          </span>
+          <span className="font-serif text-lg uppercase tracking-[0.25em] text-white">Sunluxe</span>
+          <span className="font-sans text-[9px] uppercase tracking-[0.35em] text-accent font-semibold">Hotel &amp; Suites</span>
         </div>
 
-        {/* Gold Divider */}
-        <div className="w-20 h-px bg-gradient-to-r from-transparent via-[#d4af37] to-transparent" />
+        <div className="w-24 h-px bg-gradient-to-r from-transparent via-accent to-transparent" />
 
-        {/* Mobile Nav Links */}
         {navLinks.map((link) => (
           <Link
             key={link.href}
             href={link.href}
             onClick={() => setIsOpen(false)}
-            className="text-sm font-bold uppercase tracking-[0.3em] text-white/80 hover:text-[#d4af37] transition-colors duration-300"
+            className="text-xs font-semibold uppercase tracking-[0.25em] text-gray-300 hover:text-accent transition-colors"
           >
             {link.label}
           </Link>
         ))}
 
-        {/* Mobile Book Now */}
-        <Link
-          href="/book"
-          onClick={() => setIsOpen(false)}
-          className="mt-2 border border-[#d4af37] text-[#d4af37] font-bold px-10 py-3 uppercase tracking-[0.2em] text-xs hover:bg-[#d4af37] hover:text-black transition-all duration-300"
-        >
-          Book Now
-        </Link>
+        <div className="pt-4 flex flex-col items-center gap-3 w-full px-8">
+          <Link
+            href="/login"
+            onClick={() => setIsOpen(false)}
+            className="text-xs uppercase tracking-widest text-gray-400 hover:text-white"
+          >
+            Member Sign In
+          </Link>
+
+          <Link
+            href="/book"
+            onClick={() => setIsOpen(false)}
+            className="w-full text-center bg-accent text-black font-semibold py-3 rounded-[15px] uppercase tracking-[0.2em] text-xs hover:bg-accent-light transition-all"
+          >
+            Book Your Stay
+          </Link>
+        </div>
       </div>
     </nav>
   );
