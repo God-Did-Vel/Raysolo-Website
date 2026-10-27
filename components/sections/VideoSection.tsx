@@ -115,7 +115,7 @@ export default function VideoSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              The Essence of Sunluxe
+              The Essence of Vandin
             </motion.h2>
 
             <motion.p

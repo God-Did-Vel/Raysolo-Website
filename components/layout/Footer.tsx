@@ -18,7 +18,7 @@ export default function Footer() {
 
         try {
             await apiClient.post("/api/newsletter/subscribe", { email });
-            setStatus({ type: 'success', message: "Welcome to Sunluxe Privileged Members Club." });
+            setStatus({ type: 'success', message: "Welcome to Vandin Privileged Members Club." });
             setEmail("");
         } catch (error: any) {
             setStatus({
@@ -29,23 +29,9 @@ export default function Footer() {
     };
 
     return (
-<<<<<<< HEAD
-        <footer className="bg-[#050505] text-white pt-20 pb-10 border-t border-white/5 relative z-50">
-            <div className="container mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-4 gap-12 text-sm">
-                {/* Brand */}
-                <div className="space-y-4">
-                    <Link href="/" className="text-2xl font-serif text-accent tracking-widest uppercase block">
-                       VANDIN Royal Hotel & Suites <span className="text-white"></span>
-                    </Link>
-                    <p className="text-gray-400 font-light leading-relaxed">
-                        Experience the ultimate luxury. Our hotel offers unparalleled views, exquisite dining, and world-class service.
-                    </p>
-                </div>
-=======
         <footer className="bg-[#060608] text-white pt-24 pb-12 border-t border-accent/20 relative z-40">
             {/* Top gold ambient glow */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-[1px] bg-gradient-to-r from-transparent via-accent/40 to-transparent" />
->>>>>>> 0fceb36932cb1ca1bf556f5a0483ab8fc59c684b
 
             <div className="container mx-auto px-6 lg:px-12">
                 {/* Upper Footer Grid */}
@@ -55,33 +41,21 @@ export default function Footer() {
                     <div className="lg:col-span-2 space-y-6">
                         <Link href="/" className="flex items-center gap-3 group inline-flex">
                             <div className="w-11 h-11 rounded-[15px] border border-accent/40 bg-black/60 flex items-center justify-center group-hover:border-accent transition-all">
-                                <span className="font-cinzel text-accent font-bold text-xl">S</span>
+                                <span className="font-cinzel text-accent font-bold text-xl">V</span>
                             </div>
                             <div className="flex flex-col">
                                 <span className="text-2xl font-serif text-white tracking-[0.2em] uppercase block">
-                                    Sunluxe
+                                    Vandin
                                 </span>
                                 <span className="text-[9px] tracking-[0.4em] uppercase text-accent font-semibold">
-                                    Hotel &amp; Suites
+                                    Royal Hotel &amp; Suites
                                 </span>
                             </div>
                         </Link>
 
-<<<<<<< HEAD
-                {/* Contact */}
-                <div>
-                    <h4 className="text-lg uppercase tracking-wider mb-6 font-serif">Contact</h4>
-                    <ul className="space-y-3 font-light text-gray-400">
-                        <li>123 Luxury Ave, NY 10012</li>
-                        <li>+1 (234) 567 8900</li>
-                        <li>info@vandin-hotel.com</li>
-                    </ul>
-                </div>
-=======
                         <p className="text-gray-400 font-light leading-relaxed max-w-md text-sm">
                             Where classical grandeur meets contemporary bespoke luxury. Impeccable accommodations, Michelin-inspired gastronomy, and timeless European hospitality in an iconic sanctuary.
                         </p>
->>>>>>> 0fceb36932cb1ca1bf556f5a0483ab8fc59c684b
 
                         <div className="flex items-center gap-6 pt-2">
                             <div className="flex items-center gap-2 text-xs text-accent/90">
@@ -115,7 +89,7 @@ export default function Footer() {
                         <ul className="space-y-3.5 font-light text-gray-400 text-sm">
                             <li className="flex items-start gap-2.5">
                                 <MapPin size={16} className="text-accent flex-shrink-0 mt-1" />
-                                <span>104 Sunluxe Boulevard, Victoria Island / Benin</span>
+                                <span>104 Vandin Boulevard, Victoria Island / Benin</span>
                             </li>
                             <li className="flex items-center gap-2.5">
                                 <Phone size={16} className="text-accent flex-shrink-0" />
@@ -123,7 +97,7 @@ export default function Footer() {
                             </li>
                             <li className="flex items-center gap-2.5">
                                 <Mail size={16} className="text-accent flex-shrink-0" />
-                                <span>concierge@sunluxehotel.com</span>
+                                <span>concierge@vandin-hotel.com</span>
                             </li>
                             <li className="text-xs text-gray-500 pt-1">
                                 24/7 Dedicated Royal Butler &amp; Valet Service
@@ -161,18 +135,10 @@ export default function Footer() {
                                         <span>Subscribing...</span>
                                     </>
                                 ) : (
-                                    'Join Sunluxe Club'
+                                    'Join Vandin Club'
                                 )}
                             </button>
 
-<<<<<<< HEAD
-            <div className="container mx-auto px-6 lg:px-12 mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between text-gray-500 text-xs font-light">
-                <p>&copy; {new Date().getFullYear()} VANDIN Royal Hotel & Suites . All rights reserved.</p>
-                <div className="flex space-x-6 mt-4 md:mt-0">
-                    <a href="#" className="hover:text-accent transition-colors"><Instagram size={18} /></a>
-                    <a href="#" className="hover:text-accent transition-colors"><Facebook size={18} /></a>
-                    <a href="#" className="hover:text-accent transition-colors"><Twitter size={18} /></a>
-=======
                             {status.message && (
                                 <p className={`text-xs mt-2 ${status.type === 'success' ? 'text-green-400' : 'text-red-400'}`}>
                                     {status.message}
@@ -185,7 +151,7 @@ export default function Footer() {
 
                 {/* Bottom Copyright & Social */}
                 <div className="mt-10 flex flex-col md:flex-row items-center justify-between text-gray-500 text-xs font-light gap-4">
-                    <p>&copy; {new Date().getFullYear()} Sunluxe Hotel &amp; Suites. All rights reserved. Designed for Extraordinary Living.</p>
+                    <p>&copy; {new Date().getFullYear()} Vandin Royal Hotel &amp; Suites. All rights reserved. Designed for Extraordinary Living.</p>
                     
                     <div className="flex space-x-6 items-center">
                         <Link href="/privacy" className="hover:text-accent transition-colors">Privacy Policy</Link>
@@ -201,7 +167,6 @@ export default function Footer() {
                             <Twitter size={17} />
                         </a>
                     </div>
->>>>>>> 0fceb36932cb1ca1bf556f5a0483ab8fc59c684b
                 </div>
             </div>
         </footer>

@@ -10,7 +10,7 @@ const EVENTS = [
         title: "Global Executive Leaders Summit",
         category: "Corporate Summit",
         date: "14 Oct 2026",
-        location: "Sunluxe Imperial Grand Hall",
+        location: "Vandin Imperial Grand Hall",
         image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=800&auto=format&fit=crop",
     },
     {
@@ -18,7 +18,7 @@ const EVENTS = [
         title: "Royal Gala & Champagne Soirée",
         category: "Exclusive Gala",
         date: "18 Nov 2026",
-        location: "Sunluxe Starlight Ballroom",
+        location: "Vandin Starlight Ballroom",
         image: "https://res.cloudinary.com/duweg8kpv/image/upload/v1772988986/360_F_692511356_6jleOpKpvIMrGRtXo7TZk70aD8ePbZvQ_q7ahz9.jpg",
     },
     {
@@ -26,7 +26,7 @@ const EVENTS = [
         title: "Haute Couture & Fine Arts Showcase",
         category: "Cultural Gala",
         date: "05 Dec 2026",
-        location: "Sunluxe Pavilion & Garden",
+        location: "Vandin Pavilion & Garden",
         image: "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?q=80&w=800&auto=format&fit=crop",
     }
 ];
@@ -92,61 +92,28 @@ export default function EventsPreview() {
                                 <h3 className="font-serif text-xl mb-3 text-white group-hover:text-accent transition-colors leading-snug">
                                     {event.title}
                                 </h3>
-
-<<<<<<< HEAD
-                    <div className="text-center group">
-                        <div className="overflow-hidden mb-6 aspect-[4/5] relative">
-                            <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=800&auto=format&fit=crop" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Summit" />
-                        </div>
-                        <h3 className="font-serif text-xl mb-2">The Caterer Marketing & PR Summit</h3>
-                        <p className="text-[10px] uppercase tracking-widest text-white/50">07 Oct 2026<br />Vandin Royal Hotel & Suites Benin</p>
-                    </div>
-
-                    <div className="text-center group">
-                        <div className="overflow-hidden mb-6 aspect-[4/5] relative">
-                            <img src="https://res.cloudinary.com/duweg8kpv/image/upload/v1772988986/360_F_692511356_6jleOpKpvIMrGRtXo7TZk70aD8ePbZvQ_q7ahz9.jpg" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Summit" />
-                        </div>
-                        <h3 className="font-serif text-xl mb-2">Envato LLC Marketing & PR Summit</h3>
-                        <p className="text-[10px] uppercase tracking-widest text-white/50">10 Nov 2026<br />Vandin Royal Hotel & Suites Benin</p>
-                    </div>
-
-                    <div className="text-center group">
-                        <div className="overflow-hidden mb-6 aspect-[4/5] relative">
-                            <img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?q=80&w=800&auto=format&fit=crop" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Summit" />
-                        </div>
-                        <h3 className="font-serif text-xl mb-2">3rd Natro Hosting & Summit</h3>
-                        <p className="text-[10px] uppercase tracking-widest text-white/50">30 Aug 2026<br />Vandin Royal Hotel & Suites Benin</p>
-                    </div>
-                </div>
-
-                <div className="flex justify-center mt-12 space-x-2">
-                    <span className="w-2 h-2 rounded-full bg-white"></span>
-                    <span className="w-2 h-2 rounded-full bg-white/20"></span>
-                    <span className="w-2 h-2 rounded-full bg-white/20"></span>
-=======
-                                <div className="space-y-1 text-xs text-gray-400 font-light">
+                                <div className="space-y-1 text-xs text-gray-400 font-light">
                                     <p className="flex items-center gap-1.5 text-accent/90">
-                                        <Calendar size={12} />
-                                        <span>{event.date}</span>
-                                    </p>
-                                    <p className="text-[11px] text-gray-400">
-                                        {event.location}
-                                    </p>
-                                </div>
+                                         <Calendar size={12} />
+                                         <span>{event.date}</span>
+                                     </p>
+                                     <p className="text-[11px] text-gray-400">
+                                         {event.location}
+                                     </p>
+                                 </div>
 
-                                <div className="mt-6 pt-4 border-t border-white/10">
-                                    <Link
-                                        href="/events"
-                                        className="text-xs uppercase tracking-wider text-white group-hover:text-accent font-semibold flex items-center justify-between"
-                                    >
-                                        <span>Reserve / Inquire</span>
-                                        <ArrowRight size={13} />
-                                    </Link>
-                                </div>
-                            </div>
-                        </motion.div>
-                    ))}
->>>>>>> 0fceb36932cb1ca1bf556f5a0483ab8fc59c684b
+                                 <div className="mt-6 pt-4 border-t border-white/10">
+                                     <Link
+                                         href="/events"
+                                         className="text-xs uppercase tracking-wider text-white group-hover:text-accent font-semibold flex items-center justify-between"
+                                     >
+                                         <span>Reserve / Inquire</span>
+                                         <ArrowRight size={13} />
+                                     </Link>
+                                 </div>
+                             </div>
+                         </motion.div>
+                     ))}
                 </div>
             </div>
         </section>

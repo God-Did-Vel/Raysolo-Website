@@ -93,12 +93,8 @@ export default function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.7 }}
                 >
-<<<<<<< HEAD
-                    Vandin Royal Hotel & Suites
-=======
-                    Sunluxe <br className="hidden sm:inline" />
-                    <span className="italic font-normal text-white/95">Hotel &amp; Suites</span>
->>>>>>> 0fceb36932cb1ca1bf556f5a0483ab8fc59c684b
+                    Vandin <br className="hidden sm:inline" />
+                    <span className="italic font-normal text-white/95">Royal Hotel &amp; Suites</span>
                 </motion.h1>
 
                 {/* Tagline */}

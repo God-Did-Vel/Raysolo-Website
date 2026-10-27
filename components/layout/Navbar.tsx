@@ -42,38 +42,15 @@ export default function Navbar() {
         {/* ── Brand / Logo ── */}
         <Link href="/" className="flex items-center gap-3.5 group flex-shrink-0">
           <div className="w-10 h-10 md:w-11 md:h-11 rounded-[15px] border border-accent/40 bg-black/60 flex items-center justify-center group-hover:border-accent group-hover:shadow-[0_0_15px_rgba(212,175,55,0.3)] transition-all duration-500">
-            <span className="font-cinzel text-accent font-bold text-lg md:text-xl tracking-wider">S</span>
+            <span className="font-cinzel text-accent font-bold text-lg md:text-xl tracking-wider">V</span>
           </div>
 
-<<<<<<< HEAD
-          <div className="flex flex-col leading-tight gap-[3px]">
-          
-            <span
-              className={`font-serif font-semibold uppercase tracking-[0.4em] transition-all duration-500 text-white/90 group-hover:text-[#d4af37] ${
-                scrolled
-                  ? "text-[9px] md:text-[10px]"
-                  : "text-[10px] md:text-[11px] lg:text-[12px]"
-              }`}
-            >
-              VANDIN
-            </span>
-
-            <span
-              className={`font-sans font-light tracking-[0.35em] uppercase text-[#d4af37] transition-all duration-500 ${
-                scrolled
-                  ? "text-[7px] md:text-[8px]"
-                  : "text-[8px] md:text-[9px] lg:text-[10px]" 
-              }`}
-            >
-              Royal Hotel &amp; Suites 
-=======
           <div className="flex flex-col leading-none">
             <span className="font-serif text-lg md:text-xl font-medium tracking-[0.2em] uppercase text-white group-hover:text-accent transition-colors duration-300">
-              Sunluxe
+              Vandin
             </span>
             <span className="font-sans text-[8px] md:text-[9px] font-semibold tracking-[0.4em] uppercase text-accent mt-1">
-              Hotel &amp; Suites
->>>>>>> 0fceb36932cb1ca1bf556f5a0483ab8fc59c684b
+              Royal Hotel &amp; Suites
             </span>
           </div>
         </Link>
@@ -132,19 +109,10 @@ export default function Navbar() {
       >
         <div className="flex flex-col items-center mb-2">
           <div className="w-12 h-12 rounded-[15px] border border-accent/40 bg-black/60 flex items-center justify-center mb-2">
-            <span className="font-cinzel text-accent font-bold text-2xl">S</span>
+            <span className="font-cinzel text-accent font-bold text-2xl">V</span>
           </div>
-<<<<<<< HEAD
-          <span className="font-serif font-semibold uppercase tracking-[0.4em] text-white/90 text-[10px]">
-            VANDIN
-          </span>
-          <span className="font-sans font-light tracking-[0.35em] uppercase text-[#d4af37] text-[9px]">
-             Royal Hotel &amp; Suites
-          </span>
-=======
-          <span className="font-serif text-lg uppercase tracking-[0.25em] text-white">Sunluxe</span>
-          <span className="font-sans text-[9px] uppercase tracking-[0.35em] text-accent font-semibold">Hotel &amp; Suites</span>
->>>>>>> 0fceb36932cb1ca1bf556f5a0483ab8fc59c684b
+          <span className="font-serif text-lg uppercase tracking-[0.25em] text-white">Vandin</span>
+          <span className="font-sans text-[9px] uppercase tracking-[0.35em] text-accent font-semibold">Royal Hotel &amp; Suites</span>
         </div>
 
         <div className="w-24 h-px bg-gradient-to-r from-transparent via-accent to-transparent" />

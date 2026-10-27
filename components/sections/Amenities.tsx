@@ -74,7 +74,7 @@ export default function Amenities() {
                         viewport={{ once: true }}
                         transition={{ delay: 0.2 }}
                     >
-                        Every facet of Sunluxe Hotel &amp; Suites is crafted to elevate your daily routine into an extraordinary symphony of relaxation and indulgence.
+                        Every facet of Vandin Royal Hotel &amp; Suites is crafted to elevate your daily routine into an extraordinary symphony of relaxation and indulgence.
                     </motion.p>
                 </div>
 

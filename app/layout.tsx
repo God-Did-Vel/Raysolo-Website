@@ -8,22 +8,17 @@ import SplashScreen from "@/components/ui/SplashScreen";
 import ClientLayoutWrapper from "@/components/layout/ClientLayoutWrapper";
 
 export const metadata: Metadata = {
-<<<<<<< HEAD
-  title: "VANDIN Royal Hotel & Suites  | Premium Luxury Hotel",
-  description: "Experience the ultimate luxury at Vandin Royal Hotel & Suites .",
-=======
-  title: "Sunluxe Hotel & Suites | Modern Luxury & Classic Hospitality",
-  description: "Experience the pinnacle of luxury, comfort, and timeless elegance at Sunluxe Hotel & Suites. Book bespoke suites, fine dining, and wellness retreats.",
-  keywords: "Sunluxe Hotel & Suites, luxury hotel, 5-star suites, fine dining, luxury spa, boutique hotel",
->>>>>>> 0fceb36932cb1ca1bf556f5a0483ab8fc59c684b
+  title: "Vandin Royal Hotel & Suites | Premium Luxury Hotel",
+  description: "Experience the ultimate luxury at Vandin Royal Hotel & Suites. Book bespoke suites, fine dining, and wellness retreats.",
+  keywords: "Vandin Royal Hotel & Suites, luxury hotel, 5-star suites, fine dining, luxury spa, boutique hotel",
   icons: {
     icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
   openGraph: {
-    title: "Sunluxe Hotel & Suites | Modern Luxury & Classic Hospitality",
-    description: "Experience the pinnacle of luxury, comfort, and timeless elegance at Sunluxe Hotel & Suites.",
-    siteName: "Sunluxe Hotel & Suites",
+    title: "Vandin Royal Hotel & Suites | Premium Luxury Hotel",
+    description: "Experience the ultimate luxury at Vandin Royal Hotel & Suites.",
+    siteName: "Vandin Royal Hotel & Suites",
     type: "website",
   }
 };

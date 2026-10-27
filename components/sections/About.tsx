@@ -30,28 +30,17 @@ export default function About() {
                             viewport={{ once: true, margin: "-80px" }}
                             transition={{ duration: 0.8 }}
                         >
-<<<<<<< HEAD
-                            <h4 className="text-accent uppercase tracking-[0.3em] text-sm mb-4 font-light">Vandin Royal Hotel & Suites Experience</h4>
-                            <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-8 leading-tight">
-                                A Legacy of <br />
-                                <span className="text-gray-400 italic">Unrivaled Luxury</span>
-=======
                             <span className="text-accent uppercase tracking-[0.35em] text-xs mb-4 block font-semibold">
-                                The Sunluxe Heritage
+                                The Vandin Heritage
                             </span>
                             <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-6 leading-tight">
                                 A Sanctuary of <br />
                                 <span className="italic text-accent font-light">Timeless Grandeur</span>
->>>>>>> 0fceb36932cb1ca1bf556f5a0483ab8fc59c684b
                             </h2>
 
                             <div className="space-y-5 text-gray-300 font-light leading-relaxed mb-8 text-base">
                                 <p>
-<<<<<<< HEAD
-                                    Since its inception, Vandin has redefined the art of hospitality. Nestled in breathtaking surroundings, our establishment combines classical elegance with state-of-the-art modern comforts.
-=======
-                                    Since its inception, <strong className="text-white font-medium">Sunluxe Hotel &amp; Suites</strong> has redefined the art of bespoke hospitality. Nestled in a prestigious metropolitan sanctuary, our establishment harmoniously combines neoclassical architecture with state-of-the-art modern comforts.
->>>>>>> 0fceb36932cb1ca1bf556f5a0483ab8fc59c684b
+                                    Since its inception, <strong className="text-white font-medium">Vandin Royal Hotel &amp; Suites</strong> has redefined the art of bespoke hospitality. Nestled in a prestigious metropolitan sanctuary, our establishment harmoniously combines neoclassical architecture with state-of-the-art modern comforts.
                                 </p>
                                 <p>
                                     Every detail—from curated museum-grade artwork adorning marble corridors to private butler service attending to every whim—is meticulously tailored to ensure an unforgettable sojourn.
@@ -119,7 +108,7 @@ export default function About() {
                             >
                                 <img
                                     src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?q=80&w=1600&auto=format&fit=crop"
-                                    alt="Sunluxe Grand Hotel Lobby"
+                                    alt="Vandin Grand Hotel Lobby"
                                     className="w-full h-full object-cover rounded-[15px] hover:scale-105 transition-transform duration-700"
                                 />
                             </motion.div>
@@ -134,7 +123,7 @@ export default function About() {
                             >
                                 <img
                                     src="https://res.cloudinary.com/duweg8kpv/image/upload/v1772119961/d3_xsxaea.jpg"
-                                    alt="Sunluxe Suite Lounge"
+                                    alt="Vandin Suite Lounge"
                                     className="w-full h-full object-cover rounded-[15px] hover:scale-105 transition-transform duration-700"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-4">

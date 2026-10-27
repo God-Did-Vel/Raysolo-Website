@@ -41,12 +41,8 @@ export default function SplashScreen({ children }: { children: React.ReactNode }
                             transition={{ duration: 0.8, ease: "easeOut" }}
                             className="mb-6 flex flex-col items-center"
                         >
-<<<<<<< HEAD
-                            Experience Luxury at Vandin Royal Hotel & Suites <br /> your home of comfort
-                        </motion.h1>
-=======
                             <div className="w-16 h-16 rounded-full border border-accent/40 flex items-center justify-center relative mb-4">
-                                <span className="font-cinzel text-2xl text-accent font-bold">S</span>
+                                <span className="font-cinzel text-2xl text-accent font-bold">V</span>
                                 <div className="absolute -top-1 w-2 h-2 rounded-full bg-accent animate-ping" />
                             </div>
                             <div className="flex items-center gap-1.5 text-accent/80 text-xs mb-2 tracking-[0.3em] font-light">
@@ -65,17 +61,16 @@ export default function SplashScreen({ children }: { children: React.ReactNode }
                             className="text-center px-4"
                         >
                             <h1 className="font-serif text-3xl md:text-5xl text-white tracking-[0.15em] uppercase font-light mb-2">
-                                Sunluxe
+                                Vandin
                             </h1>
                             <p className="font-sans text-[11px] md:text-xs tracking-[0.4em] uppercase text-accent font-semibold">
-                                Hotel &amp; Suites
+                                Royal Hotel &amp; Suites
                             </p>
                             <div className="w-16 h-[1px] bg-gradient-to-r from-transparent via-accent to-transparent mx-auto my-4" />
                             <p className="text-gray-400 text-xs tracking-widest font-light">
                                 Sanctuary of Timeless Luxury
                             </p>
                         </motion.div>
->>>>>>> 0fceb36932cb1ca1bf556f5a0483ab8fc59c684b
                     </motion.div>
                 )}
             </AnimatePresence>

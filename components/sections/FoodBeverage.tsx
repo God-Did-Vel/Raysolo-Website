@@ -6,46 +6,6 @@ import { Utensils, Wine, Clock, Sparkles } from "lucide-react";
 
 export default function FoodBeverage() {
     return (
-<<<<<<< HEAD
-        <section className="py-34 bg-[#0a0a0a]">
-            <div className="container mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-2 items-center">
-                <div className="bg-[#d4af37] p-12 md:p-24 h-full flex flex-col justify-center">
-                    <motion.h4
-                        className="text-white/70 uppercase tracking-[0.2em] text-xs font-bold mb-4"
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                    >
-                        Food & Beverage
-                    </motion.h4>
-                    <motion.h2
-                        className="text-4xl md:text-5xl font-serif text-white mb-6 leading-tight"
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.1 }}
-                    >
-                        Why wouldn't you dine in?
-                    </motion.h2>
-                    <motion.p
-                        className="text-white/90 font-light leading-relaxed mb-10 max-w-sm"
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.2 }}
-                    >
-                        Unlike other hotels, Vandin Royal Hotel & Suites prides itself on offering our guests in-house award-winning restaurants and our food philosophy is simple: seasonal, ingredients to showcase the region's finest flavours.
-                    </motion.p>
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.3 }}
-                    >
-                        <Link
-                            href="/restaurant"
-                            className="inline-block border border-white text-white py-3 px-8 text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-[#8c7853] transition-colors"
-=======
         <section className="py-32 bg-[#0a0a0f] relative overflow-hidden">
             <div className="container mx-auto px-6 lg:px-12">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
@@ -81,7 +41,7 @@ export default function FoodBeverage() {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.2 }}
                             >
-                                At Sunluxe Hotel &amp; Suites, our master culinary artisans transform seasonal, sustainably sourced produce into unforgettable sensory journeys. From private sommelier tastings to panoramic rooftop dinners.
+                                At Vandin Royal Hotel &amp; Suites, our master culinary artisans transform seasonal, sustainably sourced produce into unforgettable sensory journeys. From private sommelier tastings to panoramic rooftop dinners.
                             </motion.p>
                         </div>
 
@@ -102,7 +62,6 @@ export default function FoodBeverage() {
                             whileInView={{ opacity: 1 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.3 }}
->>>>>>> 0fceb36932cb1ca1bf556f5a0483ab8fc59c684b
                         >
                             <Link
                                 href="/restaurant"
@@ -117,7 +76,7 @@ export default function FoodBeverage() {
                     <div className="lg:col-span-7 relative min-h-[450px] lg:min-h-full rounded-[15px] overflow-hidden border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.8)] group">
                         <img
                             src="https://res.cloudinary.com/duweg8kpv/image/upload/v1771930902/ricceee_cjmnwu.jpg"
-                            alt="Sunluxe Fine Dining Showcase"
+                            alt="Vandin Fine Dining Showcase"
                             className="absolute inset-0 w-full h-full object-cover rounded-[15px] group-hover:scale-105 transition-transform duration-1000"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent rounded-[15px]" />

@@ -8,7 +8,7 @@ import { Bed, Users, Maximize, Sparkles, ArrowRight, ShieldCheck } from "lucide-
 const FEATURED_ROOMS = [
     {
         id: "69b2e1484f4211ddc6d25798",
-        name: "Sunluxe Presidential Suite",
+        name: "Vandin Presidential Suite",
         category: "presidential",
         size: "180 sqm / 1,937 sq ft",
         price: 950,
