@@ -1,4 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/voga');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,8 +6,11 @@
 
 :root {
   --foreground-rgb: 245, 245, 245;
-  --background-start-rgb: 0, 0, 0;
-  --background-end-rgb: 10, 10, 10;
+  --background-start-rgb: 6, 6, 8;
+  --background-end-rgb: 12, 13, 18;
+  --accent-gold: #d4af37;
+  --accent-gold-light: #f5e29f;
+  --accent-gold-dark: #b8972e;
 }
 
 * {
@@ -18,72 +21,151 @@
 
 html {
   scroll-behavior: smooth;
-  font-family: 'voga', system-ui, sans-serif;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  background-color: #060608;
+  color: #f5f5f5;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #060608;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'voga', system-ui, sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  overflow-x: hidden;
 }
 
-/* Typography */
-h1 {
-  font-family: 'voga', system-ui, sans-serif;
-  /* font-weight: 500; */
-  color: #f5f5f5;
+/* Typography Hierarchy */
+h1, h2, h3, h4, .font-serif {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  letter-spacing: 0.02em;
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', 'Cormorant Garamond', serif;
+  letter-spacing: 0.15em;
+}
+
+.font-sans {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
 }
 
 p {
-  color: #d0d0d0;
+  color: #c4c4cc;
 }
 
 a {
   color: #d4af37;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 a:hover {
-  color: #fcdca3;
+  color: #f7e4a8;
 }
 
-/* Custom Scrollbar */
+/* Luxury Utilities & Aesthetics */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #fff2c4 0%, #d4af37 50%, #aa8522 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border {
+  border: 1px solid rgba(212, 175, 55, 0.25);
+}
+
+.gold-border-hover:hover {
+  border-color: rgba(212, 175, 55, 0.7);
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.15);
+}
+
+.glass-luxury {
+  background: rgba(14, 15, 20, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-gold {
+  background: rgba(212, 175, 55, 0.06);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+/* 15px Universal Image Radius System */
+.luxury-image,
+.luxury-img-15,
+img {
+  border-radius: 15px;
+}
+
+/* Ensure images within overflow containers fit properly with 15px radius */
+.img-container-15 {
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Luxury Shimmer Button Effect */
+.btn-gold-shimmer {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.btn-gold-shimmer::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transform: rotate(30deg) translateY(-100%);
+  transition: transform 0.7s ease;
+}
+
+.btn-gold-shimmer:hover::after {
+  transform: rotate(30deg) translateY(100%);
+}
+
+/* Custom Luxury Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 7px;
+  height: 7px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0a0a0a;
+  background: #060608;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #333;
-  border-radius: 4px;
+  background: #25262f;
+  border-radius: 10px;
+  border: 1px solid rgba(212, 175, 55, 0.2);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #d4af37;
 }
 
-
-/* Input Styles */
+/* Form controls */
 input, textarea, select {
   color: #f5f5f5;
 }
 
 input::placeholder, textarea::placeholder {
-  color: #888;
+  color: #666675;
 }
 
 @layer utilities {
