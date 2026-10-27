@@ -67,17 +67,17 @@ export default function Navbar() {
                   : "text-[10px] md:text-[11px] lg:text-[12px]"
               }`}
             >
-              Raysolo
+              VANDIN
             </span>
 
             <span
               className={`font-sans font-light tracking-[0.35em] uppercase text-[#d4af37] transition-all duration-500 ${
                 scrolled
                   ? "text-[7px] md:text-[8px]"
-                  : "text-[8px] md:text-[9px] lg:text-[10px]"
+                  : "text-[8px] md:text-[9px] lg:text-[10px]" 
               }`}
             >
-              Hotel &amp; Suites
+              Royal Hotel &amp; Suites 
             </span>
           </div>
         </Link>
@@ -137,10 +137,10 @@ export default function Navbar() {
             />
           </div>
           <span className="font-serif font-semibold uppercase tracking-[0.4em] text-white/90 text-[10px]">
-            Raysolo
+            VANDIN
           </span>
           <span className="font-sans font-light tracking-[0.35em] uppercase text-[#d4af37] text-[9px]">
-            Hotel &amp; Suites
+             Royal Hotel &amp; Suites
           </span>
         </div>
 

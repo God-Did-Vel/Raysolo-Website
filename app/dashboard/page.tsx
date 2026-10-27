@@ -273,7 +273,7 @@ export default function ClientDashboard() {
                                 Welcome back, {user.name}
                             </h1>
                             <p className="text-gray-400 text-sm">
-                                Raysolo Hotel & Suites has been rewarding Members {memberSince}
+                                VANDIN Royal Hotel & Suites  has been rewarding Members {memberSince}
                             </p>
                         </div>
                     </div>

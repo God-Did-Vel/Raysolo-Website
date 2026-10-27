@@ -18,7 +18,7 @@ const TESTIMONIALS = [
         title: "Executive Director"
     },
     {
-        quote: "Quardo Deluxe doesn't just offer a place to stay; it offers an immersion into absolute luxury and tranquility.",
+        quote: "Vandin Royal Hotel & Suites doesn't just offer a place to stay; it offers an immersion into absolute luxury and tranquility.",
         author: "Sophia Laurent",
         title: "Fashion Editor"
     }

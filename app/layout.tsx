@@ -8,8 +8,8 @@ import SplashScreen from "@/components/ui/SplashScreen";
 import ClientLayoutWrapper from "@/components/layout/ClientLayoutWrapper";
 
 export const metadata: Metadata = {
-  title: "Raysolo Hotel & Suites | Premium Luxury Hotel",
-  description: "Experience the ultimate luxury at Raysolo Hotel & Suites.",
+  title: "VANDIN Royal Hotel & Suites  | Premium Luxury Hotel",
+  description: "Experience the ultimate luxury at Vandin Royal Hotel & Suites .",
   icons: {
     icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",
