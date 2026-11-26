@@ -41,14 +41,14 @@ export default function Footer() {
                     <div className="lg:col-span-2 space-y-6">
                         <Link href="/" className="flex items-center gap-3 group inline-flex">
                             <div className="w-11 h-11 rounded-[15px] border border-accent/40 bg-black/60 flex items-center justify-center group-hover:border-accent transition-all">
-                                <span className="font-cinzel text-accent font-bold text-xl">V</span>
+                                <span className="font-cinzel text-accent font-bold text-xl">G</span>
                             </div>
                             <div className="flex flex-col">
                                 <span className="text-2xl font-serif text-white tracking-[0.2em] uppercase block">
-                                    Vandin
+                                    German 
                                 </span>
                                 <span className="text-[9px] tracking-[0.4em] uppercase text-accent font-semibold">
-                                    Royal Hotel &amp; Suites
+                                    Hotel &amp; Suites
                                 </span>
                             </div>
                         </Link>

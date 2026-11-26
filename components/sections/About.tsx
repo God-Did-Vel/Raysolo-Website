@@ -31,7 +31,7 @@ export default function About() {
                             transition={{ duration: 0.8 }}
                         >
                             <span className="text-accent uppercase tracking-[0.35em] text-xs mb-4 block font-semibold">
-                                The Vandin Heritage
+                                The German Heritage
                             </span>
                             <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-6 leading-tight">
                                 A Sanctuary of <br />
@@ -40,7 +40,7 @@ export default function About() {
 
                             <div className="space-y-5 text-gray-300 font-light leading-relaxed mb-8 text-base">
                                 <p>
-                                    Since its inception, <strong className="text-white font-medium">Vandin Royal Hotel &amp; Suites</strong> has redefined the art of bespoke hospitality. Nestled in a prestigious metropolitan sanctuary, our establishment harmoniously combines neoclassical architecture with state-of-the-art modern comforts.
+                                    Since its inception, <strong className="text-white font-medium">GermanHotel &amp; Suites</strong> has redefined the art of bespoke hospitality. Nestled in a prestigious metropolitan sanctuary, our establishment harmoniously combines neoclassical architecture with state-of-the-art modern comforts.
                                 </p>
                                 <p>
                                     Every detail—from curated museum-grade artwork adorning marble corridors to private butler service attending to every whim—is meticulously tailored to ensure an unforgettable sojourn.
@@ -108,7 +108,7 @@ export default function About() {
                             >
                                 <img
                                     src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?q=80&w=1600&auto=format&fit=crop"
-                                    alt="Vandin Grand Hotel Lobby"
+                                    alt="German Grand Hotel Lobby"
                                     className="w-full h-full object-cover rounded-[15px] hover:scale-105 transition-transform duration-700"
                                 />
                             </motion.div>
@@ -123,7 +123,7 @@ export default function About() {
                             >
                                 <img
                                     src="https://res.cloudinary.com/duweg8kpv/image/upload/v1772119961/d3_xsxaea.jpg"
-                                    alt="Vandin Suite Lounge"
+                                    alt="German Suite Lounge"
                                     className="w-full h-full object-cover rounded-[15px] hover:scale-105 transition-transform duration-700"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-4">

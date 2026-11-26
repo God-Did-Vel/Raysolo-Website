@@ -71,9 +71,6 @@ export default function Hero() {
                     className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-black/60 backdrop-blur-md border border-accent/40 mb-6 shadow-[0_0_20px_rgba(212,175,55,0.2)]"
                 >
                     <Award size={14} className="text-accent" />
-                    <span className="text-[10px] md:text-xs uppercase tracking-[0.25em] font-semibold text-accent/90">
-                        ★★★★★ World Luxury Hotel Awards 2026 Winner
-                    </span>
                 </motion.div>
 
                 {/* Subtitle Accent */}
@@ -93,8 +90,8 @@ export default function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.7 }}
                 >
-                    Vandin <br className="hidden sm:inline" />
-                    <span className="italic font-normal text-white/95">Royal Hotel &amp; Suites</span>
+                    German<br className="hidden sm:inline" />
+                    <span className="italic font-normal text-white/95"> Hotel &amp; Suites</span>
                 </motion.h1>
 
                 {/* Tagline */}

@@ -113,7 +113,7 @@ export default function AdminPaymentMethods() {
                                 required
                                 rows={4}
                                 className="w-full bg-[#0a0a0a] border border-white/10 text-white p-3 focus:outline-none focus:border-accent transition-colors"
-                                placeholder="Account Name: N&B Hotel&#10;Account Number: 1234567890&#10;Bank: Chase Bank"
+                                placeholder="Account Name: German Hotel & Suites&#10;Account Number: 1234567890&#10;Bank: Chase Bank"
                             />
                         </div>
                         <div className="flex justify-end pt-2">

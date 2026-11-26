@@ -41,7 +41,7 @@ export default function FoodBeverage() {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.2 }}
                             >
-                                At Vandin Royal Hotel &amp; Suites, our master culinary artisans transform seasonal, sustainably sourced produce into unforgettable sensory journeys. From private sommelier tastings to panoramic rooftop dinners.
+                                At German Hotel &amp; Suites, our master culinary artisans transform seasonal, sustainably sourced produce into unforgettable sensory journeys. From private sommelier tastings to panoramic rooftop dinners.
                             </motion.p>
                         </div>
 

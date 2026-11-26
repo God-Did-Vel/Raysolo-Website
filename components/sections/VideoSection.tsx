@@ -59,7 +59,7 @@ export default function VideoSection() {
               crossOrigin="anonymous"
             >
               <source
-                src="https://res.cloudinary.com/duweg8kpv/video/upload/v1774556140/raysolo_uho93j.mp4"
+                src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop"
                 type="video/mp4"
               />
               Your browser does not support video.
@@ -115,7 +115,7 @@ export default function VideoSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              The Essence of Vandin
+              The Essence of German Hotel.
             </motion.h2>
 
             <motion.p

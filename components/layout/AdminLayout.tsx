@@ -67,7 +67,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
             <aside className="hidden lg:flex lg:w-64 bg-[#0a0a0a] border-r border-white/5 flex-col">
                 <div className="p-6 border-b border-white/5">
                     <h1 className="text-xl font-serif text-accent tracking-widest uppercase">
-                        Vandin Royal Hotel &amp; Suites<span className="text-white">.</span>
+                          German Hotel & Suites &amp; Suites<span className="text-white">.</span>
                     </h1>
                     <p className="text-[10px] uppercase tracking-[0.25em] text-gray-500 mt-2 font-semibold">Admin Executive Console</p>
                 </div>
@@ -150,7 +150,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
             <main className="flex-1 overflow-y-auto min-h-screen">
                 {/* Mobile Header */}
                 <div className="lg:hidden bg-[#0a0a0a] p-4 border-b border-white/5 flex justify-between items-center sticky top-0 z-40">
-                    <h1 className="text-lg font-serif text-accent tracking-widest uppercase">Vandin Admin</h1>
+                    <h1 className="text-lg font-serif text-accent tracking-widest uppercase">German Hotel & Suites Admin</h1>
                     <button onClick={() => setSidebarOpen(!sidebarOpen)}>
                         {sidebarOpen ? <X size={24} /> : <Menu size={24} />}
                     </button>

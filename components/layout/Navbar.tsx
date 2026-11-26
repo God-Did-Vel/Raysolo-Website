@@ -42,15 +42,15 @@ export default function Navbar() {
         {/* ── Brand / Logo ── */}
         <Link href="/" className="flex items-center gap-3.5 group flex-shrink-0">
           <div className="w-10 h-10 md:w-11 md:h-11 rounded-[15px] border border-accent/40 bg-black/60 flex items-center justify-center group-hover:border-accent group-hover:shadow-[0_0_15px_rgba(212,175,55,0.3)] transition-all duration-500">
-            <span className="font-cinzel text-accent font-bold text-lg md:text-xl tracking-wider">V</span>
+            <span className="font-cinzel text-accent font-bold text-lg md:text-xl tracking-wider">G</span>
           </div>
 
           <div className="flex flex-col leading-none">
             <span className="font-serif text-lg md:text-xl font-medium tracking-[0.2em] uppercase text-white group-hover:text-accent transition-colors duration-300">
-              Vandin
+              German
             </span>
             <span className="font-sans text-[8px] md:text-[9px] font-semibold tracking-[0.4em] uppercase text-accent mt-1">
-              Royal Hotel &amp; Suites
+              Hotel &amp; Suites
             </span>
           </div>
         </Link>
@@ -109,10 +109,10 @@ export default function Navbar() {
       >
         <div className="flex flex-col items-center mb-2">
           <div className="w-12 h-12 rounded-[15px] border border-accent/40 bg-black/60 flex items-center justify-center mb-2">
-            <span className="font-cinzel text-accent font-bold text-2xl">V</span>
+            <span className="font-cinzel text-accent font-bold text-2xl">G</span>
           </div>
-          <span className="font-serif text-lg uppercase tracking-[0.25em] text-white">Vandin</span>
-          <span className="font-sans text-[9px] uppercase tracking-[0.35em] text-accent font-semibold">Royal Hotel &amp; Suites</span>
+          <span className="font-serif text-lg uppercase tracking-[0.25em] text-white">German</span>
+          <span className="font-sans text-[9px] uppercase tracking-[0.35em] text-accent font-semibold">Hotel &amp; Suites</span>
         </div>
 
         <div className="w-24 h-px bg-gradient-to-r from-transparent via-accent to-transparent" />

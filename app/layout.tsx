@@ -8,17 +8,17 @@ import SplashScreen from "@/components/ui/SplashScreen";
 import ClientLayoutWrapper from "@/components/layout/ClientLayoutWrapper";
 
 export const metadata: Metadata = {
-  title: "Vandin Royal Hotel & Suites | Premium Luxury Hotel",
+  title: "German Hotel & Suites | Premium Luxury Hotel",
   description: "Experience the ultimate luxury at Vandin Royal Hotel & Suites. Book bespoke suites, fine dining, and wellness retreats.",
-  keywords: "Vandin Royal Hotel & Suites, luxury hotel, 5-star suites, fine dining, luxury spa, boutique hotel",
+  keywords: "German Hotel & Suites & Suites, luxury hotel, 5-star suites, fine dining, luxury spa, boutique hotel",
   icons: {
     icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
   openGraph: {
-    title: "Vandin Royal Hotel & Suites | Premium Luxury Hotel",
+    title: "German Hotel & Suites & Suites | Premium Luxury Hotel",
     description: "Experience the ultimate luxury at Vandin Royal Hotel & Suites.",
-    siteName: "Vandin Royal Hotel & Suites",
+    siteName: "German Hotel & Suites",
     type: "website",
   }
 };

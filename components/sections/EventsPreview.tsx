@@ -10,7 +10,7 @@ const EVENTS = [
         title: "Global Executive Leaders Summit",
         category: "Corporate Summit",
         date: "14 Oct 2026",
-        location: "Vandin Imperial Grand Hall",
+        location: "German Imperial Grand Hall",
         image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=800&auto=format&fit=crop",
     },
     {
@@ -18,7 +18,7 @@ const EVENTS = [
         title: "Royal Gala & Champagne Soirée",
         category: "Exclusive Gala",
         date: "18 Nov 2026",
-        location: "Vandin Starlight Ballroom",
+        location: "German Starlight Ballroom",
         image: "https://res.cloudinary.com/duweg8kpv/image/upload/v1772988986/360_F_692511356_6jleOpKpvIMrGRtXo7TZk70aD8ePbZvQ_q7ahz9.jpg",
     },
     {
@@ -26,7 +26,7 @@ const EVENTS = [
         title: "Haute Couture & Fine Arts Showcase",
         category: "Cultural Gala",
         date: "05 Dec 2026",
-        location: "Vandin Pavilion & Garden",
+        location: "German Pavilion & Garden",
         image: "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?q=80&w=800&auto=format&fit=crop",
     }
 ];
@@ -92,7 +92,8 @@ export default function EventsPreview() {
                                 <h3 className="font-serif text-xl mb-3 text-white group-hover:text-accent transition-colors leading-snug">
                                     {event.title}
                                 </h3>
-                                <div className="space-y-1 text-xs text-gray-400 font-light">
+
+                                <div className="space-y-1 text-xs text-gray-400 font-light">
                                     <p className="flex items-center gap-1.5 text-accent/90">
                                          <Calendar size={12} />
                                          <span>{event.date}</span>
